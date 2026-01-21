@@ -7,15 +7,15 @@ Manually construct a "UserOperation," act as your own Bundler, and execute it on
 
 ## Part 1: Setup
 
-1.  **Initialize a Node.js project**:
+1.  **Initialize a Bun project**:
     ```bash
-    npm init -y
+    bun init -y
     ```
 2.  **Install dependencies:**
     *   `ethers` (v6 recommended)
     *   `solc` (Solidity compiler)
     *   `@account-abstraction/contracts` (contains the official interfaces and the EntryPoint artifact)
-    *   `dotenv` (for managing environment variables)
+    *   *Note: Bun loads `.env` files automatically, so `dotenv` is not required.*
 3.  **Configuration:**
     *   Create a `.env` file.
     *   Add `RPC_URL` (Alchemy/Infura for Sepolia) and `PRIVATE_KEY` (your Signer).
